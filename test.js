@@ -11,13 +11,14 @@ let req = new Request(urlApi, {
 	mode: 'cors'
 });
 
+
 fetch(req)
 .then( res => {
 	
 	if(res.ok){
 		return res.json();
 	}else{
-		console.log( 'res: error' );
+		console.log( 'res: res no ok' );
 	}
 
 })
